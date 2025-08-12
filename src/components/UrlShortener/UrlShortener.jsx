@@ -81,7 +81,7 @@ function UrlShortener() {
               placeholder="Shorten a link here..."
               aria-label="URL input field"
               className={error ? "error" : ""}
-              onKeyPress={(e) => e.key === "Enter" && shortenUrl()}
+              onKeyDown={(e) => e.key === "Enter" && shortenUrl()}
               disabled={isLoading}
             />
             <button
